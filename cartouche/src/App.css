@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.cartouche {
+  width: 80vw;
+  height: 200px;
+  border: 4px double black;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 3px 5px;
+  position: relative;
+  padding: 2rem;
+  z-index: -10000;
+}
+
+.cartouche:after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  width: 0;
+  top: -4px;
+  height: calc(100% + 8px);
+  border-right: 4px double black;
+  
+}
+
